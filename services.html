@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Services — MTBB</title>
+<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="/Mtbb-Site/site.css">
+<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}}}}}</script></head>
+<body class="bg-neutral-950 text-neutral-100" data-page="home">
+<div id="header-slot"></div>
+<section class="max-w-6xl mx-auto px-4 py-16">
+  <h1 class="text-3xl md:text-4xl font-extrabold">Services</h1>
+  <p class="text-neutral-300 mt-2">Done-for-you execution powered by our MTBB tools.</p>
+  <div id="servicesGrid" class="grid md:grid-cols-3 gap-6 mt-8"></div>
+</section>
+<div id="footer-slot"></div>
+<script src="/Mtbb-Site/site.js"></script>
+<script>
+(async ()=>{
+  const data=await fetch('/Mtbb-Site/data.json').then(r=>r.json());
+  document.getElementById('servicesGrid').innerHTML = data.services.map(s=>`
+    <article class="glass rounded-2xl p-5">
+      <h3 class="font-semibold text-lg">${s.title}</h3>
+      <p class="text-neutral-300 text-sm mt-1">${s.desc}</p>
+      <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+        ${s.bullets.map(b=>`<li>• ${b}</li>`).join('')}
+      </ul>
+      <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">${s.cta||'Request Quote'}</a>
+    </article>`).join('');
+})();
+</script>
+</body></html>
