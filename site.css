@@ -3,13 +3,13 @@ html{scroll-behavior:smooth}
  radial-gradient(1200px 600px at 20% -10%, rgba(109,115,255,.18), transparent 60%),
  radial-gradient(900px 520px at 110% 10%, rgba(77,85,230,.14), transparent 60%)}
 .glass{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);backdrop-filter:blur(10px)}
-/* Floating “bleed” blobs */
-.blob{position:absolute;filter:blur(40px);opacity:.5;border-radius:9999px;mix-blend:screen}
-.blob-1{width:380px;height:380px;background:#6d73ff20;left:-120px;top:-120px;animation:float1 14s ease-in-out infinite}
-.blob-2{width:300px;height:300px;background:#4d55e620;right:-80px;top:-60px;animation:float2 18s ease-in-out infinite}
-@keyframes float1{50%{transform:translate(20px,30px) scale(1.05)}}
-@keyframes float2{50%{transform:translate(-10px,20px) scale(0.95)}}
-/* Buttons */
+.ringish{box-shadow:0 0 0 1px rgba(255,255,255,.06) inset}
 .btn{transition:transform .12s ease, box-shadow .12s ease}
 .btn:hover{transform:translateY(-1px)}
-.ringish{box-shadow:0 0 0 1px rgba(255,255,255,.06) inset}
+.card{transition:transform .15s ease}
+
+/* classy floating objects (no blobs) */
+.accent-line{position:absolute;width:120px;height:2px;background:linear-gradient(90deg,transparent,#6d73ff,transparent);filter:blur(.3px);opacity:.6;animation:slideLine 8s ease-in-out infinite}
+@keyframes slideLine{0%,100%{transform:translateX(0)}50%{transform:translateX(20px)}}
+.accent-chip{position:absolute;width:12px;height:12px;border-radius:9999px;background:radial-gradient(circle,#6d73ff 0%,rgba(109,115,255,0.0) 70%);box-shadow:0 0 20px #6d73ff55;animation:floatChip 6s ease-in-out infinite}
+@keyframes floatChip{50%{transform:translateY(6px)}}
