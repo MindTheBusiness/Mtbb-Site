@@ -13,4 +13,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       el.innerHTML = `<div class="p-3 rounded-lg bg-red-900/40 text-red-300 text-sm">Failed to load ${url}</div>`;
     }
   }));
+  // tell other scripts the partials are ready
+  window.dispatchEvent(new Event('partials:loaded'));
 });
