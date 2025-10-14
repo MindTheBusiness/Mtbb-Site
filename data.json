@@ -1,99 +1,67 @@
 {
   "brand": {
-    "tagline": "AI-powered marketing & BI, delivered like a product.",
-    "blurb": "Mind The Business (MTBB) is a studio that builds practical AI tools and delivers done-for-you growth systems for creators and small brands. No fluff — real outcomes.",
     "email": "mindthebusinessmtbb@gmail.com",
     "policies": {
-      "privacy": "#",
-      "terms": "#",
-      "refunds": "#",
+      "privacy": "/Mtbb-Site/privacy.html",
+      "terms": "/Mtbb-Site/terms.html",
+      "refunds": "/Mtbb-Site/refunds.html",
       "support": "mailto:mindthebusinessmtbb@gmail.com"
     }
   },
-
   "services": [
     {
-      "title": "SEO & UX Fix Sprint",
-      "desc": "30-day sprint to raise search visibility and conversions.",
-      "bullets": ["Full MindScan audit + priority fixes", "On-page cleanup (titles, meta, speed)", "UX tweaks for mobile funnels", "Simple KPI dashboard"],
-      "cta": "Request Quote"
+      "title": "SEO / GEO Optimization",
+      "desc": "Audit, analyze, and optimize your visibility across search and AI-driven discovery.",
+      "bullets": [
+        "Free demo scan (snapshot + key grades)",
+        "Full AI plan (4-week optimization sprint)",
+        "Monthly subscription via Stripe (coming soon)"
+      ],
+      "cta": "book"
     },
     {
-      "title": "Offer + Funnel Launch",
-      "desc": "Position your offer and ship a funnel that converts.",
-      "bullets": ["Persona & messaging via MindMap", "Landing page copy + build", "Email capture + nurture", "Analytics wiring"],
-      "cta": "Request Quote"
+      "title": "Brand Development & Market Strategy",
+      "desc": "Turn insights into systems — audience, positioning, site, and campaigns.",
+      "bullets": [
+        "Includes SEO/Geo audit & analysis",
+        "Strategy consultation with MTBB",
+        "Optional website or dashboard build"
+      ],
+      "cta": "book"
     },
     {
-      "title": "BI Starter (Insights Engine)",
-      "desc": "Get the numbers that matter with a lean reporting setup.",
-      "bullets": ["KPI design session", "GA4 + events + goals", "Lightweight dashboard (Looker/Sheets)", "Weekly insights for 4 weeks"],
-      "cta": "Request Quote"
+      "title": "Lead Generation System",
+      "desc": "AI personas, interactive eCard, and content strategy to attract qualified demand.",
+      "bullets": [
+        "Includes eCard + Buyer Persona tools",
+        "Content strategy consultation",
+        "Optional automation setup"
+      ],
+      "cta": "book"
     }
   ],
-
   "packages": [
     {
-      "name": "Launch Kit",
-      "desc": "Offer + landing + analytics in one package.",
-      "deliverables": ["Persona & positioning", "Landing page build", "Lead magnet (AI eBook)", "KPI & analytics wiring"],
-      "price": "Custom",
-      "cta": "#"
+      "name": "Launch System",
+      "desc": "From audit to execution — strategy, funnel, and tracking.",
+      "deliverables": [
+        "Brand strategy & offer positioning",
+        "Landing page + funnel setup",
+        "KPI & analytics wiring",
+        "Post-launch performance report"
+      ],
+      "cta": "https://calendly.com/mindthebusinessmtbb/1hour"
     },
     {
-      "name": "Growth Kit",
-      "desc": "30-day SEO/UX sprint to lift traffic and conversions.",
-      "deliverables": ["MindScan audit + fixes", "Content plan (3-5 posts)", "On-page SEO update", "Performance reports"],
-      "price": "Custom",
-      "cta": "#"
-    },
-    {
-      "name": "Intelligence Kit",
-      "desc": "Your BI starter: metrics, dashboards, and insights.",
-      "deliverables": ["KPI map", "Events & tracking", "Dashboard setup", "Weekly insights (4 weeks)"],
-      "price": "Custom",
-      "cta": "#"
-    }
-  ],
-
-  "tools": [
-    {
-      "name": "MindScan (SEO/UX Audit)",
-      "desc": "One-click scans with prioritized fixes and exports.",
-      "price": "$35",
-      "buy": "",
-      "demo": "https://mtbb-audit-toolv2-production.up.railway.app/"
-    },
-    {
-      "name": "AI eBook Builder",
-      "desc": "Generate a lead magnet fast — outline, write, export.",
-      "price": "$15",
-      "buy": "",
-      "demo": "https://6848e5ae019ffb200fcbcdfb--mindlyebook-multimmodal-ai.netlify.app/"
-    },
-    {
-      "name": "MindLink (E-Business Card)",
-      "desc": "Interactive card that sells — chat, leads, analytics.",
-      "price": "$20",
-      "buy": "",
-      "demo": "#"
-    },
-    {
-      "name": "MindMap (Buyer Persona)",
-      "desc": "AI personas + messaging + campaign ideas in minutes.",
-      "price": "$25",
-      "buy": "",
-      "demo": "#"
-    }
-  ],
-
-  "posts": [
-    {
-      "id": "welcome",
-      "title": "Welcome to MTBB: how we build growth like a product",
-      "date": "2025-10-14",
-      "summary": "What MTBB is, how the tools and DFY packages connect, and how we measure wins.",
-      "url": "#"
+      "name": "Growth Intelligence",
+      "desc": "SEO/GEO + BI dashboards for continual improvement.",
+      "deliverables": [
+        "Comprehensive audit",
+        "4-week implementation plan",
+        "Dashboard + monthly insights",
+        "Ongoing support options"
+      ],
+      "cta": "https://calendly.com/mindthebusinessmtbb/1hour"
     }
   ]
 }
