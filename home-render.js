@@ -1,4 +1,3 @@
-<script>
 (async function(){
   try {
     const data = await fetch('/Mtbb-Site/data.json?v=' + Date.now()).then(r=>r.json());
@@ -32,6 +31,7 @@
         </article>
       `).join('');
     }
-  } catch(e) {}
+  } catch(e) {
+    console.error('home-render error', e);
+  }
 })();
-</script>
