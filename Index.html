@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MTBB — Modern Tools for Bold Brands</title>
+  <meta name="description" content="AI-powered marketing tools for creators and small businesses: MindLink, MindScan, MindMap, and AI eBook Builder." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="color-scheme" content="dark light" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: { DEFAULT:'#6d73ff' } },
+          boxShadow: { soft:'0 10px 30px rgba(0,0,0,.15)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { background: rgba(255,255,255,.06); backdrop-filter: blur(8px); }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-xl bg-primary flex items-center justify-center font-bold">M</div>
+        <span class="font-semibold tracking-wide">MTBB</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#tools" class="hover:text-primary">Tools</a>
+        <a href="#pricing" class="hover:text-primary">Pricing</a>
+        <a href="#media" class="hover:text-primary">Media</a>
+        <a href="#blog" class="hover:text-primary">Blog</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+      <a href="#shop" class="hidden md:inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Shop</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-neutral-800" aria-label="Menu">☰</button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-neutral-800">
+      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#tools" class="py-2 hover:text-primary">Tools</a>
+        <a href="#pricing" class="py-2 hover:text-primary">Pricing</a>
+        <a href="#media" class="py-2 hover:text-primary">Media</a>
+        <a href="#blog" class="py-2 hover:text-primary">Blog</a>
+        <a href="#contact" class="py-2 hover:text-primary">Contact</a>
+        <a href="#shop" class="py-2 font-semibold text-primary">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(109,115,255,.15),transparent_60%)]"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 relative">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Modern Tools for <span class="text-primary">Bold Brands</span>
+        </h1>
+        <p class="mt-4 text-neutral-300 text-lg md:text-xl">
+          AI-powered marketing tools you own: MindLink, MindScan, MindMap, and the AI eBook Builder.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#shop" class="px-6 py-3 rounded-xl bg-primary text-neutral-900 font-semibold shadow-soft text-center">Browse Packages</a>
+          <a href="#tools" class="px-6 py-3 rounded-xl bg-neutral-800 hover:bg-neutral-700 text-neutral-100 text-center">See Individual Tools</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Featured Tools</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- MindLink -->
+      <article class="glass rounded-2xl p-5 border border-neutral-800">
+        <h3 class="font-semibold text-lg">MindLink</h3>
+        <p class="text-neutral-300 text-sm mt-1">Interactive e-business card with chat, leads, and analytics.</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://mtbb.gumroad.com/l/mindlink" class="px-3 py-2 rounded-lg bg-primary text-neutral-900 text-sm font-semibold">Buy $20</a>
+          <a href="#media" class="px-3 py-2 rounded-lg bg-neutral-800 text-sm">Demo</a>
+        </div>
+      </article>
+      <!-- MindScan -->
+      <article class="glass rounded-2xl p-5 border border-neutral-800">
+        <h3 class="font-semibold text-lg">MindScan</h3>
+        <p class="text-neutral-300 text-sm mt-1">SEO/UX/AI audits with instant insights and exportable reports.</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://mtbb.gumroad.com/l/mindscan" class="px-3 py-2 rounded-lg bg-primary text-neutral-900 text-sm font-semibold">Buy $35</a>
+          <a href="#media" class="px-3 py-2 rounded-lg bg-neutral-800 text-sm">Demo</a>
+        </div>
+      </article>
+      <!-- MindMap -->
+      <article class="glass rounded-2xl p-5 border border-neutral-800">
+        <h3 class="font-semibold text-lg">MindMap</h3>
+        <p class="text-neutral-300 text-sm mt-1">AI buyer personas + marketing strategy in minutes.</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://mtbb.gumroad.com/l/mindmap" class="px-3 py-2 rounded-lg bg-primary text-neutral-900 text-sm font-semibold">Buy $25</a>
+          <a href="#media" class="px-3 py-2 rounded-lg bg-neutral-800 text-sm">Demo</a>
+        </div>
+      </article>
+      <!-- eBook -->
+      <article class="glass rounded-2xl p-5 border border-neutral-800">
+        <h3 class="font-semibold text-lg">AI eBook Builder</h3>
+        <p class="text-neutral-300 text-sm mt-1">Generate lead magnets and ebooks automatically.</p>
+        <div class="mt-4 flex gap-2">
+          <a href="https://mtbb.gumroad.com/l/ebookgen" class="px-3 py-2 rounded-lg bg-primary text-neutral-900 text-sm font-semibold">Buy $15</a>
+          <a href="#media" class="px-3 py-2 rounded-lg bg-neutral-800 text-sm">Demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Pricing</h2>
+    <p class="text-neutral-300 mb-8">Buy standalone tools or save with bundles.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Starter -->
+      <div class="glass rounded-2xl p-6 border border-neutral-800">
+        <h3 class="text-xl font-semibold">Starter Pack</h3>
+        <p class="text-neutral-300 mt-1">MindLink + MindScan</p>
+        <div class="text-3xl font-extrabold mt-4">$49</div>
+        <ul class="text-sm text-neutral-300 mt-4 space-y-1">
+          <li>• Instant download</li>
+          <li>• Free updates</li>
+          <li>• Email support</li>
+        </ul>
+        <a href="https://mtbb.gumroad.com/l/starter" class="mt-6 inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Buy Starter</a>
+      </div>
+      <!-- Growth -->
+      <div class="glass rounded-2xl p-6 border border-neutral-800">
+        <h3 class="text-xl font-semibold">Growth Pack</h3>
+        <p class="text-neutral-300 mt-1">MindLink + MindScan + MindMap</p>
+        <div class="text-3xl font-extrabold mt-4">$69</div>
+        <ul class="text-sm text-neutral-300 mt-4 space-y-1">
+          <li>• Everything in Starter</li>
+          <li>• Persona templates</li>
+          <li>• Priority tips</li>
+        </ul>
+        <a href="https://mtbb.gumroad.com/l/growth" class="mt-6 inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Buy Growth</a>
+      </div>
+      <!-- Agency -->
+      <div class="glass rounded-2xl p-6 border border-neutral-800">
+        <h3 class="text-xl font-semibold">Agency Pack</h3>
+        <p class="text-neutral-300 mt-1">All tools + bonus docs</p>
+        <div class="text-3xl font-extrabold mt-4">$99</div>
+        <ul class="text-sm text-neutral-300 mt-4 space-y-1">
+          <li>• Agency-ready assets</li>
+          <li>• Client pitch outline</li>
+          <li>• Priority support</li>
+        </ul>
+        <a href="https://mtbb.gumroad.com/l/agency" class="mt-6 inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Buy Agency</a>
+      </div>
+    </div>
+    <p class="text-neutral-400 text-sm mt-6">Launch special: <a href="https://mtbb.gumroad.com/l/lifetime" class="underline hover:text-primary">Lifetime Bundle $149</a></p>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Media & Demos</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-800">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_1" title="MindLink Demo" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-800">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_2" title="MindScan Demo" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Blog & Updates</h2>
+    <p class="text-neutral-300 mb-6">Build-in-public notes, tutorials, and release changelogs.</p>
+    <a href="https://your-notion-blog-link" class="inline-block px-4 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700">Open MTBB Blog</a>
+  </section>
+
+  <!-- SHOP CTA -->
+  <section id="shop" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="glass rounded-2xl p-8 border border-neutral-800 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <h3 class="text-xl md:text-2xl font-bold">Ready to gear up?</h3>
+        <p class="text-neutral-300">Choose a bundle or grab the tools you need. Instant download. Own it forever.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="#pricing" class="px-5 py-3 rounded-xl bg-primary text-neutral-900 font-semibold">View Pricing</a>
+        <a href="https://mtbb.gumroad.com" class="px-5 py-3 rounded-xl bg-neutral-800">Open Store</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-2">Contact</h2>
+    <p class="text-neutral-300">Questions, collabs, or support? Reach out anytime.</p>
+    <div class="mt-4 space-y-2">
+      <p>📧 <a class="underline hover:text-primary" href="mailto:mtbbai@gmail.com">mtbbai@gmail.com</a></p>
+      <p>📝 Feedback / Early Access form: <a class="underline hover:text-primary" href="https://forms.gle/YOUR_GOOGLE_FORM">Open form</a></p>
+      <p>🔗 X: <a class="underline hover:text-primary" href="https://twitter.com/mtbbai">@mtbbai</a> • LinkedIn: <a class="underline hover:text-primary" href="https://linkedin.com/company/mtbb">MTBB</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-neutral-800">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <span>© <span id="yr"></span> MTBB. All rights reserved.</span>
+      <div class="flex gap-4">
+        <a href="#blog" class="hover:text-primary">Blog</a>
+        <a href="#pricing" class="hover:text-primary">Pricing</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
+    // Year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
