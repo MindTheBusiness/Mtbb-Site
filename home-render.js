@@ -1,8 +1,7 @@
-(async function(){
+async function renderHome(){
   try {
     const data = await fetch('/Mtbb-Site/data.json?v=' + Date.now()).then(r=>r.json());
 
-    // Services
     const sv = document.getElementById('servicesGrid');
     if (sv && data.services) {
       sv.innerHTML = data.services.map(s => `
@@ -17,7 +16,6 @@
       `).join('');
     }
 
-    // Packages
     const pk = document.getElementById('packagesGrid');
     if (pk && data.packages) {
       pk.innerHTML = data.packages.map(p => `
@@ -34,4 +32,7 @@
   } catch(e) {
     console.error('home-render error', e);
   }
-})();
+}
+
+// wait for partials to load, then render
+window.addEventListener('partials:loaded', renderHome);
