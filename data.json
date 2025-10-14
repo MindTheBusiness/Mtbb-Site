@@ -1,12 +1,6 @@
 {
   "brand": {
-    "email": "mindthebusinessmtbb@gmail.com",
-    "policies": {
-      "privacy": "/Mtbb-Site/privacy.html",
-      "terms": "/Mtbb-Site/terms.html",
-      "refunds": "/Mtbb-Site/refunds.html",
-      "support": "mailto:mindthebusinessmtbb@gmail.com"
-    }
+    "email": "mindthebusinessmtbb@gmail.com"
   },
   "services": [
     {
@@ -17,7 +11,7 @@
         "Full AI plan (4-week optimization sprint)",
         "Monthly subscription via Stripe (coming soon)"
       ],
-      "cta": "book"
+      "cta": "https://calendly.com/mindthebusinessmtbb/1hour"
     },
     {
       "title": "Brand Development & Market Strategy",
@@ -27,7 +21,7 @@
         "Strategy consultation with MTBB",
         "Optional website or dashboard build"
       ],
-      "cta": "book"
+      "cta": "https://calendly.com/mindthebusinessmtbb/1hour"
     },
     {
       "title": "Lead Generation System",
@@ -37,7 +31,7 @@
         "Content strategy consultation",
         "Optional automation setup"
       ],
-      "cta": "book"
+      "cta": "https://calendly.com/mindthebusinessmtbb/1hour"
     }
   ],
   "packages": [
