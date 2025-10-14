@@ -14,10 +14,10 @@
   <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};</script>
   <link rel="stylesheet" href="/Mtbb-Site/site.css">
 </head>
-<body class="bg-neutral-950 text-neutral-100 antialiased" data-page="home">
+<body class="bg-neutral-950 text-neutral-100 antialiased">
   <div id="header-slot"></div>
 
-  <!-- Modular includes -->
+  <!-- only these four sections are loaded -->
   <div data-include="/Mtbb-Site/partials/home-hero.html"></div>
   <div data-include="/Mtbb-Site/partials/home-services.html"></div>
   <div data-include="/Mtbb-Site/partials/home-packages.html"></div>
@@ -25,83 +25,12 @@
 
   <div id="footer-slot"></div>
 
-  <!-- Loaders & renderers -->
+  <!-- shared + modular loaders -->
   <script src="/Mtbb-Site/site.js"></script>
   <script src="/Mtbb-Site/include.js"></script>
   <script src="/Mtbb-Site/home-render.js"></script>
 </body>
-</html>    <h2 class="text-3xl font-bold mb-6">High-Value Packages</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-2xl font-semibold">Launch System</h3>
-        <p class="text-neutral-300 mt-2">From audit to execution — strategy, funnel, and tracking.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Brand strategy & offer positioning</li>
-          <li>• Landing page + funnel setup</li>
-          <li>• KPI & analytics wiring</li>
-          <li>• Post-launch performance report</li>
-        </ul>
-        <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-2xl font-semibold">Growth Intelligence</h3>
-        <p class="text-neutral-300 mt-2">SEO/GEO + BI dashboards for continual improvement.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Comprehensive audit</li>
-          <li>• 4-week implementation plan</li>
-          <li>• Dashboard + monthly insights</li>
-          <li>• Ongoing support options</li>
-        </ul>
-        <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- EMAIL CAPTURE -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <div class="glass rounded-2xl p-6 md:p-8">
-      <h3 class="text-xl md:text-2xl font-bold">Get MTBB updates & insights</h3>
-      <p class="text-neutral-300 mt-2">Be first to try new demos, playbooks, and growth experiments.</p>
-      <form id="leadForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 flex flex-col sm:flex-row gap-3">
-        <input class="w-full sm:w-1/2 px-4 py-3 rounded-xl bg-neutral-900 ringish" type="email" name="email" placeholder="your@email.com" required>
-        <input type="hidden" name="source" value="home-signup">
-        <button class="btn px-5 py-3 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Subscribe</button>
-      </form>
-      <p id="leadMsg" class="text-sm text-neutral-400 mt-2 hidden">Thanks! You’re on the list.</p>
-    </div>
-  </section>
-
-  <div id="footer-slot"></div>
-
-  <script src="/Mtbb-Site/site.js"></script>
-  <script>
-    // form lightweight success state
-    const form=document.getElementById('leadForm'),msg=document.getElementById('leadMsg');
-    form?.addEventListener('submit',async(e)=>{e.preventDefault();
-      try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-        if(r.ok){msg.classList.remove('hidden');form.reset();}}catch(_){}})
-  </script>
-</body>
-</html>        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Brand strategy & offer positioning</li>
-          <li>• Landing page + funnel setup</li>
-          <li>• KPI & analytics wiring</li>
-          <li>• Post-launch performance report</li>
-        </ul>
-        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-2xl font-semibold">Growth Intelligence</h3>
-        <p class="text-neutral-300 mt-2">SEO/GEO + BI dashboards for continual improvement.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Comprehensive audit</li>
-          <li>• 4-week implementation plan</li>
-          <li>• Dashboard + monthly insights</li>
-          <li>• Ongoing support options</li>
-        </ul>
-        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
+</html>        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
       </article>
     </div>
   </section>
