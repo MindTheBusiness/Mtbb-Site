@@ -1,34 +1,28 @@
-<!-- Shared header (injected on every page) -->
-<header class="sticky top-0 z-50 border-b border-neutral-900/60 bg-neutral-950/70 backdrop-blur">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="/Mtbb-Site/index.html" class="flex items-center gap-2">
-      <div class="h-8 w-8 rounded-xl bg-brand flex items-center justify-center font-extrabold text-neutral-900">M</div>
-      <span class="font-semibold tracking-wide">Mind The Business</span>
-    </a>
-    <nav class="hidden md:flex gap-6 text-sm">
-      <a href="/Mtbb-Site/index.html" data-nav="home" class="hover:text-brand">Home</a>
-      <div class="relative group">
-        <button class="hover:text-brand">Solutions</button>
-        <div class="absolute hidden group-hover:block mt-2 w-48 rounded-xl bg-neutral-900/95 border border-neutral-800 p-2">
-          <a href="/Mtbb-Site/services.html" class="block px-3 py-2 rounded-lg hover:bg-neutral-800">Services</a>
-          <a href="/Mtbb-Site/packages.html" class="block px-3 py-2 rounded-lg hover:bg-neutral-800">Packages</a>
-          <a href="/Mtbb-Site/tools.html" class="block px-3 py-2 rounded-lg hover:bg-neutral-800">Tools</a>
-        </div>
-      </div>
-      <a href="/Mtbb-Site/blog.html" data-nav="blog" class="hover:text-brand">Blog</a>
-      <a href="/Mtbb-Site/contact.html" data-nav="contact" class="hover:text-brand">Contact</a>
+<header class="sticky top-0 z-40 bg-neutral-950/85 backdrop-blur border-b border-neutral-900/60">
+  <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <a href="/Mtbb-Site/" class="font-extrabold tracking-tight text-white">MTBB</a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-neutral-300">
+      <a href="/Mtbb-Site/" class="hover:text-brand">Home</a>
+      <a href="/Mtbb-Site/services.html" class="hover:text-brand">Services</a>
+      <a href="/Mtbb-Site/packages.html" class="hover:text-brand">Packages</a>
+      <a href="/Mtbb-Site/tools.html" class="hover:text-brand">Tools</a>
+      <a href="/Mtbb-Site/blog.html" class="hover:text-brand">Blog</a>
+      <a href="/Mtbb-Site/contact.html" class="hover:text-brand">Contact</a>
     </nav>
-    <a href="/Mtbb-Site/packages.html" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Get Started</a>
-    <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-neutral-900/70">☰</button>
+    <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="hidden md:inline-flex px-3 py-1.5 rounded-lg bg-brand text-neutral-900 font-semibold text-sm">Book a Call</a>
+
+    <!-- mobile -->
+    <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-neutral-900 text-neutral-200">☰</button>
   </div>
   <div id="mobileNav" class="md:hidden hidden border-t border-neutral-900/60">
-    <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
-      <a href="/Mtbb-Site/index.html" class="py-2">Home</a>
-      <a href="/Mtbb-Site/services.html" class="py-2">Services</a>
-      <a href="/Mtbb-Site/packages.html" class="py-2">Packages</a>
-      <a href="/Mtbb-Site/tools.html" class="py-2">Tools</a>
-      <a href="/Mtbb-Site/blog.html" class="py-2">Blog</a>
-      <a href="/Mtbb-Site/contact.html" class="py-2">Contact</a>
+    <nav class="px-4 py-3 grid gap-2 text-neutral-300 text-sm">
+      <a href="/Mtbb-Site/" class="hover:text-brand">Home</a>
+      <a href="/Mtbb-Site/services.html" class="hover:text-brand">Services</a>
+      <a href="/Mtbb-Site/packages.html" class="hover:text-brand">Packages</a>
+      <a href="/Mtbb-Site/tools.html" class="hover:text-brand">Tools</a>
+      <a href="/Mtbb-Site/blog.html" class="hover:text-brand">Blog</a>
+      <a href="/Mtbb-Site/contact.html" class="hover:text-brand">Contact</a>
+      <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-1 inline-flex justify-center px-3 py-2 rounded-lg bg-brand text-neutral-900 font-semibold">Book a Call</a>
     </nav>
   </div>
 </header>
