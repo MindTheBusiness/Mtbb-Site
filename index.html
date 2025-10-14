@@ -1,107 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mind The Business — MTBB</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mind The Business (MTBB) — AI Marketing & GEO Intelligence</title>
+  <meta name="description" content="MTBB builds AI-powered marketing and GEO intelligence systems. Run SEO audits, launch your brand strategy, and grow with actionable insights."/>
+  <link rel="canonical" href="https://mindthebusiness.github.io/Mtbb-Site/"/>
+  <meta property="og:title" content="Mind The Business — AI Marketing & GEO Intelligence"/>
+  <meta property="og:description" content="AI-powered marketing, SEO/Geo audits, brand strategy, and growth intelligence for creators and small businesses."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://mindthebusiness.github.io/Mtbb-Site/"/>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { DEFAULT: '#6d73ff', 700: '#4d55e6' } },
+          boxShadow: { soft: '0 10px 30px rgba(0,0,0,.24)' }
+        }
+      }
+    };
+  </script>
   <link rel="stylesheet" href="/Mtbb-Site/site.css">
-  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}}}}}</script>
+  <style>
+    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.7),rgba(0,0,0,.6),rgba(0,0,0,.85))}
+    .card:hover{transform:translateY(-2px)}
+  </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 antialiased" data-page="home">
+
   <div id="header-slot"></div>
 
   <!-- HERO -->
-  <section class="relative grad">
-    <div class="blob blob-1"></div><div class="blob blob-2"></div>
-    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 relative">
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Mind The Business</h1>
-      <p id="brandBlurb" class="mt-4 text-neutral-300 text-lg md:text-xl"></p>
-      <div class="mt-8 flex flex-col sm:flex-row gap-3">
-        <a href="/Mtbb-Site/packages.html" class="btn px-6 py-3 rounded-xl bg-brand text-neutral-900 font-semibold shadow">See Packages</a>
-        <a href="/Mtbb-Site/tools.html" class="btn px-6 py-3 rounded-xl ringish bg-neutral-900 text-neutral-100">Explore Tools</a>
+  <section class="relative w-full h-[80vh] flex items-center justify-center text-center overflow-hidden">
+    <img src="/Mtbb-Site/20240720_105325_0000.png" alt="Mind The Business Hero" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="relative z-10 max-w-3xl px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">AI Marketing & GEO Intelligence for Modern Brands</h1>
+      <p class="mt-4 text-neutral-300 text-lg md:text-xl leading-relaxed">
+        Empower your growth with real data, precision targeting, and actionable insights. 
+        Built by MTBB for creators, consultants, and small businesses ready to scale.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="/Mtbb-Site/tools.html" class="px-6 py-3 rounded-xl bg-brand text-neutral-900 font-semibold shadow-soft hover:scale-105 transition">
+          Run an SEO/Geo Audit
+        </a>
+        <a href="/Mtbb-Site/services.html" class="px-6 py-3 rounded-xl ringish bg-neutral-900 text-neutral-100 hover:text-brand transition">
+          Explore MTBB Solutions
+        </a>
       </div>
-      <p class="mt-3 text-sm text-neutral-400">No portfolios. Real outcomes. Built like a product.</p>
+      <p class="mt-3 text-sm text-neutral-400">Powered by AI • Optimized for GEO visibility • Trusted by entrepreneurs</p>
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
-  <section class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Core Services</h2>
-    <div id="servicesGrid" class="grid md:grid-cols-3 gap-6"></div>
-    <div class="mt-6"><a href="/Mtbb-Site/services.html" class="underline hover:text-brand">View all services →</a></div>
+  <!-- SERVICES -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold mb-6">Services that drive growth</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- SEO/GEO -->
+      <article class="glass rounded-2xl p-6 card">
+        <h3 class="text-xl font-semibold">SEO / GEO Optimization</h3>
+        <p class="text-neutral-300 mt-2">Audit, analyze, and optimize your visibility across search and AI-driven discovery engines.</p>
+        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+          <li>• Free demo scan (snapshot + key grades)</li>
+          <li>• Full AI plan (4-week optimization sprint)</li>
+          <li>• Monthly subscription via Stripe (coming soon)</li>
+        </ul>
+        <div class="mt-4 flex flex-col gap-2">
+          <a href="/Mtbb-Site/tools.html" class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Try Demo</a>
+          <a href="#" class="px-4 py-2 rounded-xl ringish bg-neutral-900 text-sm text-neutral-100">Unlock Full Plan</a>
+        </div>
+      </article>
+
+      <!-- Brand Strategy -->
+      <article class="glass rounded-2xl p-6 card">
+        <h3 class="text-xl font-semibold">Brand Development & Market Strategy</h3>
+        <p class="text-neutral-300 mt-2">We turn SEO insights into full brand systems — audience, positioning, and market expansion.</p>
+        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+          <li>• Includes SEO/Geo audit & analysis</li>
+          <li>• Full strategy consultation (MTBB expert)</li>
+          <li>• Optional website or dashboard build</li>
+        </ul>
+        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Book Strategy Build</a>
+      </article>
+
+      <!-- Lead Generation -->
+      <article class="glass rounded-2xl p-6 card">
+        <h3 class="text-xl font-semibold">Lead Generation System</h3>
+        <p class="text-neutral-300 mt-2">AI-powered lead capture, persona mapping, and content strategy for brand expansion.</p>
+        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+          <li>• Includes eCard + Buyer Persona tools</li>
+          <li>• Content strategy consultation</li>
+          <li>• Optional add-on automation setup</li>
+        </ul>
+        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Join Early Access</a>
+      </article>
+    </div>
   </section>
 
-  <!-- PACKAGES PREVIEW -->
-  <section class="max-w-6xl mx-auto px-4 pb-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Packages (Done-for-You)</h2>
-    <div id="packagesGrid" class="grid md:grid-cols-3 gap-6"></div>
-    <div class="mt-6"><a href="/Mtbb-Site/packages.html" class="underline hover:text-brand">Compare packages →</a></div>
+  <!-- PACKAGES -->
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <h2 class="text-3xl font-bold mb-6">High-Value Packages</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Launch System -->
+      <article class="glass rounded-2xl p-6 card">
+        <h3 class="text-2xl font-semibold">Launch System</h3>
+        <p class="text-neutral-300 mt-2">Everything you need to go from audit to execution — strategy, design, and tracking.</p>
+        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+          <li>• Brand strategy + offer positioning</li>
+          <li>• Landing page + funnel setup</li>
+          <li>• KPI & analytics wiring</li>
+          <li>• Post-launch performance report</li>
+        </ul>
+        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
+      </article>
+
+      <!-- Growth Intelligence -->
+      <article class="glass rounded-2xl p-6 card">
+        <h3 class="text-2xl font-semibold">Growth Intelligence</h3>
+        <p class="text-neutral-300 mt-2">Combine SEO, GEO, and BI analytics for continuous performance improvement.</p>
+        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+          <li>• Comprehensive SEO/GEO audit</li>
+          <li>• Full implementation plan (4-week)</li>
+          <li>• BI dashboard + monthly insights</li>
+          <li>• Ongoing support options</li>
+        </ul>
+        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- EMAIL CAPTURE -->
+  <section class="max-w-6xl mx-auto px-4 pb-16">
+    <div class="glass rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl md:text-2xl font-bold">Get MTBB updates & insights</h3>
+      <p class="text-neutral-300 mt-2">Sign up for early access, marketing playbooks, and growth experiments.</p>
+      <form id="leadForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 flex flex-col sm:flex-row gap-3">
+        <input class="w-full sm:w-1/2 px-4 py-3 rounded-xl bg-neutral-900 ringish" type="email" name="email" placeholder="your@email.com" required>
+        <input type="hidden" name="source" value="home-signup">
+        <button class="btn px-5 py-3 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Subscribe</button>
+      </form>
+      <p id="leadMsg" class="text-sm text-neutral-400 mt-2 hidden">Thanks! You’re on the list.</p>
+    </div>
   </section>
 
   <div id="footer-slot"></div>
 
   <script src="/Mtbb-Site/site.js"></script>
   <script>
-    async function hydrate(){
-      const data = await fetch('/Mtbb-Site/data.json').then(r=>r.json());
-      document.getElementById('brandBlurb').textContent = data.brand.blurb;
-
-      // services preview
-      const sv = document.getElementById('servicesGrid');
-      sv.innerHTML = data.services.map(s => `
-        <article class="glass rounded-2xl p-5">
-          <h3 class="font-semibold text-lg">${s.title}</h3>
-          <p class="text-neutral-300 text-sm mt-1">${s.desc}</p>
-          <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-            ${s.bullets.slice(0,3).map(b=>`<li>• ${b}</li>`).join('')}
-          </ul>
-        </article>`).join('');
-
-      // packages preview
-      const pk = document.getElementById('packagesGrid');
-      pk.innerHTML = data.packages.map(p => `
-        <div class="glass rounded-2xl p-6">
-          <h3 class="text-xl font-semibold">${p.name}</h3>
-          <p class="text-neutral-300 mt-1">${p.desc}</p>
-          <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-            ${p.deliverables.slice(0,3).map(d=>`<li>• ${d}</li>`).join('')}
-          </ul>
-          <div class="mt-4 text-neutral-300 text-sm">Pricing: ${p.price}</div>
-          <a href="${p.cta || '/Mtbb-Site/contact.html'}" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Request Quote</a>
-        </div>`).join('');
-    }
-    hydrate();
+    const form=document.getElementById('leadForm'),msg=document.getElementById('leadMsg');
+    form?.addEventListener('submit',async(e)=>{
+      e.preventDefault();
+      try{
+        const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+        if(res.ok){msg.classList.remove('hidden');form.reset();}
+      }catch(_){}
+    });
   </script>
 </body>
-</html>        <p class="text-neutral-300 mt-1">MindLink + MindScan + MindMap</p>
-        <div class="text-3xl font-extrabold mt-4">$69</div>
-        <ul class="text-sm text-neutral-300 mt-4 space-y-1">
-          <li>• Everything in Starter</li>
-          <li>• Persona templates</li>
-          <li>• Priority tips</li>
-        </ul>
-        <a href="https://mtbb.gumroad.com/l/growth" class="mt-6 inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Buy Growth</a>
-      </div>
-      <!-- Agency -->
-      <div class="glass rounded-2xl p-6 border border-neutral-800">
-        <h3 class="text-xl font-semibold">Agency Pack</h3>
-        <p class="text-neutral-300 mt-1">All tools + bonus docs</p>
-        <div class="text-3xl font-extrabold mt-4">$99</div>
-        <ul class="text-sm text-neutral-300 mt-4 space-y-1">
-          <li>• Agency-ready assets</li>
-          <li>• Client pitch outline</li>
-          <li>• Priority support</li>
-        </ul>
-        <a href="https://mtbb.gumroad.com/l/agency" class="mt-6 inline-block px-4 py-2 rounded-xl bg-primary text-neutral-900 font-semibold">Buy Agency</a>
-      </div>
-    </div>
-    <p class="text-neutral-400 text-sm mt-6">Launch special: <a href="https://mtbb.gumroad.com/l/lifetime" class="underline hover:text-primary">Lifetime Bundle $149</a></p>
-  </section>
-
-  <!-- MEDIA -->
-  <section id="media" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Media & Demos</h2>
+</html>    <h2 class="text-2xl md:text-3xl font-bold mb-6">Media & Demos</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-800">
         <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_1" title="MindLink Demo" frameborder="0" allowfullscreen></iframe>
