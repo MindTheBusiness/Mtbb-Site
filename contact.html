@@ -1,18 +1,48 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contact — MTBB</title>
-<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="/Mtbb-Site/site.css">
-<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}}}}}</script></head>
-<body class="bg-neutral-950 text-neutral-100" data-page="contact">
-<div id="header-slot"></div>
-<section class="max-w-6xl mx-auto px-4 py-16">
-  <h1 class="text-3xl md:text-4xl font-extrabold">Contact</h1>
-  <p class="text-neutral-300 mt-2">Questions, quotes, or collabs.</p>
-  <div class="glass rounded-2xl p-6 mt-8">
-    <p class="text-neutral-300">Email: <a class="underline text-brand" href="mailto:mindthebusinessmtbb@gmail.com">mindthebusinessmtbb@gmail.com</a></p>
-    <p class="text-neutral-400 text-sm mt-2">Response within 1–2 business days.</p>
-  </div>
-</section>
-<div id="footer-slot"></div>
-<script src="/Mtbb-Site/site.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact MTBB — Book a Call</title>
+  <meta name="description" content="Contact Mind The Business. Book a strategy call or ask a question."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};</script>
+  <link rel="stylesheet" href="/Mtbb-Site/site.css"/>
+  <style>
+    /* Calendly container */
+    .cal-wrap{height:760px}
+    @media (max-width: 640px){ .cal-wrap{height:900px} }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-100 antialiased">
+  <div id="header-slot"></div>
+
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-8">
+    <section class="space-y-2">
+      <h1 class="text-3xl md:text-5xl font-extrabold">Book a call</h1>
+      <p class="text-neutral-300">Strategy, audits, tools, or support—pick a time that works.</p>
+    </section>
+
+    <section class="glass rounded-2xl p-2">
+      <div class="cal-wrap">
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/mindthebusinessmtbb/1hour"
+             style="min-width:320px; height:100%;"></div>
+      </div>
+    </section>
+
+    <section class="glass rounded-2xl p-6">
+      <h2 class="text-xl font-semibold">Prefer email?</h2>
+      <p class="text-neutral-300 mt-1">
+        Reach us at <a class="underline" href="mailto:mindthebusinessmtbb@gmail.com">mindthebusinessmtbb@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <!-- Calendly embed -->
+  <script defer src="/Mtbb-Site/site.js"></script>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
