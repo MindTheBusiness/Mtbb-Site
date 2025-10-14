@@ -1,184 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mind The Business (MTBB) — AI Marketing & GEO Intelligence</title>
-  <meta name="description" content="AI-powered marketing and GEO intelligence for creators and small brands. SEO/Geo audits, brand strategy, and growth intelligence."/>
-  <link rel="canonical" href="https://mindthebusiness.github.io/Mtbb-Site/"/>
-  <meta property="og:title" content="Mind The Business — AI Marketing & GEO Intelligence"/>
-  <meta property="og:description" content="Tools you own + systems we deliver. Get found, convert, and grow with data."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://mindthebusiness.github.io/Mtbb-Site/"/>
+  <meta name="description" content="AI-powered marketing and GEO intelligence for creators and small brands. Run audits, build strategies, and grow smarter with MTBB." />
+  <link rel="canonical" href="https://mindthebusiness.github.io/Mtbb-Site/" />
+  <meta property="og:title" content="Mind The Business — AI Marketing & GEO Intelligence" />
+  <meta property="og:description" content="Tools you own + systems we deliver. Get found, convert, and grow with data." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mindthebusiness.github.io/Mtbb-Site/" />
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};</script>
-  <link rel="stylesheet" href="/Mtbb-Site/site.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { DEFAULT: '#6d73ff' },
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.25)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="/Mtbb-Site/site.css" />
 </head>
-<body class="bg-neutral-950 text-neutral-100 antialiased">
+
+<body class="bg-neutral-950 text-neutral-100 antialiased" data-page="home">
+
+  <!-- HEADER SLOT -->
   <div id="header-slot"></div>
 
-  <!-- only these four sections are loaded -->
+  <!-- PAGE CONTENT -->
   <div data-include="/Mtbb-Site/partials/home-hero.html"></div>
   <div data-include="/Mtbb-Site/partials/home-services.html"></div>
   <div data-include="/Mtbb-Site/partials/home-packages.html"></div>
   <div data-include="/Mtbb-Site/partials/home-newsletter.html"></div>
 
+  <!-- FOOTER SLOT -->
   <div id="footer-slot"></div>
 
-  <!-- shared + modular loaders -->
+  <!-- SCRIPTS -->
   <script src="/Mtbb-Site/site.js"></script>
   <script src="/Mtbb-Site/include.js"></script>
   <script src="/Mtbb-Site/home-render.js"></script>
-</body>
-</html>        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-    </div>
-  </section>
 
-  <!-- EMAIL CAPTURE -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <div class="glass rounded-2xl p-6 md:p-8">
-      <h3 class="text-xl md:text-2xl font-bold">Get MTBB updates & insights</h3>
-      <p class="text-neutral-300 mt-2">Be first to try new demos, playbooks, and growth experiments.</p>
-      <form id="leadForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 flex flex-col sm:flex-row gap-3">
-        <input class="w-full sm:w-1/2 px-4 py-3 rounded-xl bg-neutral-900 ringish" type="email" name="email" placeholder="your@email.com" required>
-        <input type="hidden" name="source" value="home-signup">
-        <button class="btn px-5 py-3 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Subscribe</button>
-      </form>
-      <p id="leadMsg" class="text-sm text-neutral-400 mt-2 hidden">Thanks! You’re on the list.</p>
-    </div>
-  </section>
-
-  <div id="footer-slot"></div>
-
-  <script src="/Mtbb-Site/site.js"></script>
-  <script>
-    const form=document.getElementById('leadForm'),msg=document.getElementById('leadMsg');
-    form?.addEventListener('submit',async(e)=>{e.preventDefault();
-      try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-        if(r.ok){msg.classList.remove('hidden');form.reset();}}catch(_){}})
-  </script>
-</body>
-</html>    <h2 class="text-3xl font-bold mb-6">High-Value Packages</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Launch System -->
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-2xl font-semibold">Launch System</h3>
-        <p class="text-neutral-300 mt-2">Everything you need to go from audit to execution — strategy, design, and tracking.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Brand strategy + offer positioning</li>
-          <li>• Landing page + funnel setup</li>
-          <li>• KPI & analytics wiring</li>
-          <li>• Post-launch performance report</li>
-        </ul>
-        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-
-      <!-- Growth Intelligence -->
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-2xl font-semibold">Growth Intelligence</h3>
-        <p class="text-neutral-300 mt-2">Combine SEO, GEO, and BI analytics for continuous performance improvement.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Comprehensive SEO/GEO audit</li>
-          <li>• Full implementation plan (4-week)</li>
-          <li>• BI dashboard + monthly insights</li>
-          <li>• Ongoing support options</li>
-        </ul>
-        <a href="/Mtbb-Site/contact.html" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Request Quote</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- EMAIL CAPTURE -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <div class="glass rounded-2xl p-6 md:p-8">
-      <h3 class="text-xl md:text-2xl font-bold">Get MTBB updates & insights</h3>
-      <p class="text-neutral-300 mt-2">Sign up for early access, marketing playbooks, and growth experiments.</p>
-      <form id="leadForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 flex flex-col sm:flex-row gap-3">
-        <input class="w-full sm:w-1/2 px-4 py-3 rounded-xl bg-neutral-900 ringish" type="email" name="email" placeholder="your@email.com" required>
-        <input type="hidden" name="source" value="home-signup">
-        <button class="btn px-5 py-3 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Subscribe</button>
-      </form>
-      <p id="leadMsg" class="text-sm text-neutral-400 mt-2 hidden">Thanks! You’re on the list.</p>
-    </div>
-  </section>
-
-  <div id="footer-slot"></div>
-
-  <script src="/Mtbb-Site/site.js"></script>
-  <script>
-    const form=document.getElementById('leadForm'),msg=document.getElementById('leadMsg');
-    form?.addEventListener('submit',async(e)=>{
-      e.preventDefault();
-      try{
-        const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-        if(res.ok){msg.classList.remove('hidden');form.reset();}
-      }catch(_){}
-    });
-  </script>
-</body>
-</html>    <h2 class="text-2xl md:text-3xl font-bold mb-6">Media & Demos</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-800">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_1" title="MindLink Demo" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="aspect-video rounded-2xl overflow-hidden border border-neutral-800">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/VIDEO_ID_2" title="MindScan Demo" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold mb-2">Blog & Updates</h2>
-    <p class="text-neutral-300 mb-6">Build-in-public notes, tutorials, and release changelogs.</p>
-    <a href="https://your-notion-blog-link" class="inline-block px-4 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700">Open MTBB Blog</a>
-  </section>
-
-  <!-- SHOP CTA -->
-  <section id="shop" class="max-w-6xl mx-auto px-4 py-16">
-    <div class="glass rounded-2xl p-8 border border-neutral-800 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <div>
-        <h3 class="text-xl md:text-2xl font-bold">Ready to gear up?</h3>
-        <p class="text-neutral-300">Choose a bundle or grab the tools you need. Instant download. Own it forever.</p>
-      </div>
-      <div class="flex gap-3">
-        <a href="#pricing" class="px-5 py-3 rounded-xl bg-primary text-neutral-900 font-semibold">View Pricing</a>
-        <a href="https://mtbb.gumroad.com" class="px-5 py-3 rounded-xl bg-neutral-800">Open Store</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold mb-2">Contact</h2>
-    <p class="text-neutral-300">Questions, collabs, or support? Reach out anytime.</p>
-    <div class="mt-4 space-y-2">
-      <p>📧 <a class="underline hover:text-primary" href="mailto:mtbbai@gmail.com">mtbbai@gmail.com</a></p>
-      <p>📝 Feedback / Early Access form: <a class="underline hover:text-primary" href="https://forms.gle/YOUR_GOOGLE_FORM">Open form</a></p>
-      <p>🔗 X: <a class="underline hover:text-primary" href="https://twitter.com/mtbbai">@mtbbai</a> • LinkedIn: <a class="underline hover:text-primary" href="https://linkedin.com/company/mtbb">MTBB</a></p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t border-neutral-800">
-    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-      <span>© <span id="yr"></span> MTBB. All rights reserved.</span>
-      <div class="flex gap-4">
-        <a href="#blog" class="hover:text-primary">Blog</a>
-        <a href="#pricing" class="hover:text-primary">Pricing</a>
-        <a href="#contact" class="hover:text-primary">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Mobile nav
-    const btn = document.getElementById('menuBtn');
-    const nav = document.getElementById('mobileNav');
-    btn?.addEventListener('click', () => nav.classList.toggle('hidden'));
-    // Year
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
