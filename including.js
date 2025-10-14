@@ -2,12 +2,16 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const targets = Array.from(document.querySelectorAll('[data-include]'));
   await Promise.all(targets.map(async el => {
-    const url = el.getAttribute('data-include');
+    let url = el.getAttribute('data-include');
+    const bust = (url.includes('?') ? '&' : '?') + 'v=' + Date.now();
+    url = url + bust;
     try {
-      const html = await (await fetch(url)).text();
-      el.innerHTML = html;
+      const res = await fetch(url);
+      if(!res.ok) throw new Error(res.status);
+      el.innerHTML = await res.text();
+      el.dataset.loaded = 'true';
     } catch (e) {
-      el.innerHTML = '<div class="text-red-400 text-sm">Failed to load '+url+'</div>';
+      el.innerHTML = `<div class="p-3 rounded-lg bg-red-900/40 text-red-300 text-sm">Failed to load ${url}</div>`;
     }
   }));
 });
