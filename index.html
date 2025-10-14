@@ -4,106 +4,33 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Mind The Business (MTBB) — AI Marketing & GEO Intelligence</title>
-  <meta name="description" content="AI-powered marketing and GEO intelligence for creators and small brands. Run SEO/Geo audits, launch brand strategy, and grow with actionable insights."/>
+  <meta name="description" content="AI-powered marketing and GEO intelligence for creators and small brands. SEO/Geo audits, brand strategy, and growth intelligence."/>
   <link rel="canonical" href="https://mindthebusiness.github.io/Mtbb-Site/"/>
   <meta property="og:title" content="Mind The Business — AI Marketing & GEO Intelligence"/>
-  <meta property="og:description" content="AI-powered marketing, SEO/Geo audits, brand strategy, and growth intelligence."/>
+  <meta property="og:description" content="Tools you own + systems we deliver. Get found, convert, and grow with data."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://mindthebusiness.github.io/Mtbb-Site/"/>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff',700:'#4d55e6'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};
-  </script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};</script>
   <link rel="stylesheet" href="/Mtbb-Site/site.css">
-  <style>
-    .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.9;filter:brightness(.75)}
-    .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.6),rgba(0,0,0,.65),rgba(0,0,0,.85))}
-    .glass-strong{background:rgba(0,0,0,.55);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.08)}
-    .card{transition:transform .15s ease}
-    .card:hover{transform:translateY(-2px)}
-  </style>
 </head>
 <body class="bg-neutral-950 text-neutral-100 antialiased" data-page="home">
-
   <div id="header-slot"></div>
 
-  <!-- HERO -->
-  <section class="relative w-full h-[78vh] flex items-center justify-center text-center overflow-hidden">
-    <img src="/Mtbb-Site/20240720_105325_0000.png" alt="Mind The Business Hero" class="hero-bg">
-    <div class="hero-overlay"></div>
+  <!-- Modular includes -->
+  <div data-include="/Mtbb-Site/partials/home-hero.html"></div>
+  <div data-include="/Mtbb-Site/partials/home-services.html"></div>
+  <div data-include="/Mtbb-Site/partials/home-packages.html"></div>
+  <div data-include="/Mtbb-Site/partials/home-newsletter.html"></div>
 
-    <!-- subtle accents (classy lines/chip) -->
-    <div class="accent-line top-8 left-10"></div>
-    <div class="accent-line bottom-12 right-12 rotate-180"></div>
-    <div class="accent-chip top-24 right-[15%]"></div>
+  <div id="footer-slot"></div>
 
-    <div class="relative z-10 max-w-3xl mx-auto px-4">
-      <div class="glass-strong rounded-2xl px-6 py-7">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white">AI Marketing & GEO Intelligence</h1>
-        <p class="mt-4 text-neutral-200 text-lg md:text-xl leading-relaxed">
-          Tools you own + systems we deliver. MTBB helps creators and small brands get found, convert, and grow with data.
-        </p>
-        <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="px-6 py-3 rounded-xl bg-brand text-neutral-900 font-semibold shadow-soft hover:scale-105 transition">
-            Book a Call
-          </a>
-          <a href="/Mtbb-Site/tools.html" class="px-6 py-3 rounded-xl ringish bg-neutral-900 text-neutral-100 hover:text-brand transition">
-            Run an SEO/Geo Audit
-          </a>
-        </div>
-        <p class="mt-3 text-sm text-neutral-400">Secure checkout • Instant delivery • Email support</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold mb-6">Services that drive growth</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- SEO/GEO -->
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-xl font-semibold">SEO / GEO Optimization</h3>
-        <p class="text-neutral-300 mt-2">Audit, analyze, and optimize your visibility across search and AI-driven discovery.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Free demo scan (snapshot + key grades)</li>
-          <li>• Full AI plan (4-week optimization sprint)</li>
-          <li>• Monthly subscription via Stripe (coming soon)</li>
-        </ul>
-        <div class="mt-4 flex flex-col gap-2">
-          <a href="/Mtbb-Site/tools.html" class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Try Demo</a>
-          <a href="#" class="px-4 py-2 rounded-xl ringish bg-neutral-900 text-sm text-neutral-100">Unlock Full Plan</a>
-        </div>
-      </article>
-
-      <!-- Brand Strategy -->
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-xl font-semibold">Brand Development & Market Strategy</h3>
-        <p class="text-neutral-300 mt-2">Turn insights into systems — audience, positioning, site, campaigns.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Includes SEO/Geo audit & analysis</li>
-          <li>• Strategy consultation with MTBB</li>
-          <li>• Optional website or dashboard build</li>
-        </ul>
-        <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Book Strategy Build</a>
-      </article>
-
-      <!-- Lead Gen -->
-      <article class="glass rounded-2xl p-6 card">
-        <h3 class="text-xl font-semibold">Lead Generation System</h3>
-        <p class="text-neutral-300 mt-2">AI personas, interactive eCard, and content strategy to attract qualified demand.</p>
-        <ul class="text-neutral-400 text-sm mt-3 space-y-1">
-          <li>• Includes eCard + Buyer Persona tools</li>
-          <li>• Content strategy consultation</li>
-          <li>• Optional automation setup</li>
-        </ul>
-        <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold text-sm">Join Early Access</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- PACKAGES (only once) -->
-  <section class="max-w-6xl mx-auto px-4 pb-16">
-    <h2 class="text-3xl font-bold mb-6">High-Value Packages</h2>
+  <!-- Loaders & renderers -->
+  <script src="/Mtbb-Site/site.js"></script>
+  <script src="/Mtbb-Site/include.js"></script>
+  <script src="/Mtbb-Site/home-render.js"></script>
+</body>
+</html>    <h2 class="text-3xl font-bold mb-6">High-Value Packages</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <article class="glass rounded-2xl p-6 card">
         <h3 class="text-2xl font-semibold">Launch System</h3>
