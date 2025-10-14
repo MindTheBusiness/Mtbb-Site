@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Tools — MTBB</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}}</script>
-<link rel="stylesheet" href="/Mtbb-Site/site.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MTBB Tools — SEO/GEO Demo, eBook, and Growth Systems</title>
+  <meta name="description" content="Run a free SEO/GEO discovery demo, explore MTBB growth tools, and book a strategy call."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}};</script>
+  <link rel="stylesheet" href="/Mtbb-Site/site.css"/>
 </head>
-<body class="bg-neutral-950 text-neutral-100" data-page="home">
-<div id="header-slot"></div>
+<body class="bg-neutral-950 text-neutral-100 antialiased">
+  <div id="header-slot"></div>
 
-<section class="max-w-6xl mx-auto px-4 py-16">
-  <h1 class="text-3xl md:text-4xl font-extrabold">MTBB Tools</h1>
-  <p class="text-neutral-300 mt-2">Ownable utilities you can use with or without our services.</p>
-
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-    <!-- SEO/GEO TOOL -->
-    <article class="glass rounded-2xl p-6">
-      <h3 class="font-semibold text-lg">MindScan (SEO / GEO Audit)</h3>
-      <p class="text-neutral-300 text-sm mt-1">Run a fast scan, see snapshot grades, and get a prioritized AI plan.</p>
-      <div class="mt-3 text-neutral-400 text-sm">Price: $35 — monthly option coming soon</div>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <!-- demo gating: blank link triggers modal -->
-        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
-        <!-- paid placeholder -->
-        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Unlock Full Plan</a>
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-10">
+    <!-- Hero -->
+    <section class="grad rounded-2xl p-6 md:p-10 border border-neutral-900/70">
+      <h1 class="text-3xl md:text-5xl font-extrabold">MTBB Tools</h1>
+      <p class="mt-3 text-neutral-300 text-lg max-w-3xl">
+        Try the free SEO/GEO discovery demo, grab our AI eBook, and explore systems we build for creators & small brands.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="#demo" class="px-5 py-3 rounded-xl bg-brand text-neutral-900 font-semibold text-center">Run the free demo</a>
+        <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="px-5 py-3 rounded-xl bg-neutral-900 ringish text-center">Talk to MTBB</a>
       </div>
-    </article>
+    </section>
 
-    <!-- EBOOK -->
-    <article class="glass rounded-2xl p-6">
-      <h3 class="font-semibold text-lg">AI eBook Builder</h3>
-      <p class="text-neutral-300 text-sm mt-1">Generate a lead magnet fast — outline, write, export.</p>
-      <div class="mt-3 text-neutral-400 text-sm">Price: $15</div>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
-        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
+    <!-- Demo -->
+    <section id="demo" class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-bold">SEO/GEO discovery demo</h2>
+      <p class="text-neutral-300 max-w-3xl">
+        See a snapshot score and a few key grades across technical SEO, local discovery, and AI answerability.
+        The full 4-week optimization plan is available after onboarding.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">Try the demo</h3>
+          <p class="text-neutral-300 mt-2">Quick scan + sample grades. Great for a first look.</p>
+          <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Start</a>
+        </article>
+        <article class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">Get the full plan</h3>
+          <p class="text-neutral-300 mt-2">4-week AI-driven optimization sprint, delivered by MTBB.</p>
+          <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-4 inline-block px-4 py-2 rounded-xl bg-neutral-900 ringish">Book onboarding</a>
+        </article>
       </div>
-    </article>
+    </section>
 
-    <!-- MindLink -->
-    <article class="glass rounded-2xl p-6">
-      <h3 class="font-semibold text-lg">MindLink (Interactive eCard)</h3>
-      <p class="text-neutral-300 text-sm mt-1">Capture leads with chat, QR, and simple analytics.</p>
-      <div class="mt-3 text-neutral-400 text-sm">Price: $20</div>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
-        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
+    <!-- Live tools -->
+    <section class="space-y-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Live tools</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="glass rounded-2xl p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-lg">SEO / GEO Audit (MVP)</h3>
+            <span class="chip">Beta</span>
+          </div>
+          <p class="text-neutral-300 mt-2">
+            Prototype audit tool for visibility across search, maps, and AI snippets.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://mtbb-audit-toolv2-production.up.railway.app/" class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Open tool</a>
+            <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="px-4 py-2 rounded-xl bg-neutral-900 ringish">Get help</a>
+          </div>
+        </article>
+
+        <article class="glass rounded-2xl p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="font-semibold text-lg">Mindly eBook</h3>
+            <span class="chip">Free</span>
+          </div>
+          <p class="text-neutral-300 mt-2">
+            Multimodal AI eBook to level up your growth workflow.
+          </p>
+          <div class="mt-4 flex gap-3">
+            <a href="https://6848e5ae019ffb200fcbcdfb--mindlyebook-multimmodal-ai.netlify.app/" class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Read eBook</a>
+            <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="px-4 py-2 rounded-xl bg-neutral-900 ringish">Discuss</a>
+          </div>
+        </article>
       </div>
-    </article>
+    </section>
 
-    <!-- MindMap -->
-    <article class="glass rounded-2xl p-6">
-      <h3 class="font-semibold text-lg">MindMap (Buyer Persona)</h3>
-      <p class="text-neutral-300 text-sm mt-1">AI personas + messaging + campaign ideas.</p>
-      <div class="mt-3 text-neutral-400 text-sm">Price: $25</div>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
-        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
-      </div>
-    </article>
-  </div>
-</section>
+    <!-- Need something custom -->
+    <section class="glass rounded-2xl p-6">
+      <h3 class="text-lg font-semibold">Looking for a custom tool or dashboard?</h3>
+      <p class="text-neutral-300 mt-2">We build lightweight internal tools and BI dashboards for creators & small brands.</p>
+      <a href="https://calendly.com/mindthebusinessmtbb/1hour" class="mt-3 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Book a scoping call</a>
+    </section>
+  </main>
 
-<!-- DEMO GATE MODAL -->
-<div id="gateModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center p-4 z-50">
-  <div class="max-w-md w-full glass rounded-2xl p-6">
-    <h3 class="text-xl font-bold">Get instant demo access</h3>
-    <p class="text-neutral-300 mt-2">Enter your email — we’ll unlock the demo and send occasional updates.</p>
-    <form id="gateForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 space-y-3">
-      <input type="email" required name="email" class="w-full px-4 py-3 rounded-xl bg-neutral-900 ringish" placeholder="you@brand.com">
-      <input type="hidden" name="source" value="demo-gate">
-      <input type="hidden" id="intendedDemo" name="intended_demo" value="">
-      <div class="flex gap-2">
-        <button class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Unlock Demo</button>
-        <button type="button" id="gateClose" class="px-4 py-2 rounded-xl bg-neutral-800">Cancel</button>
-      </div>
-    </form>
-    <p id="gateMsg" class="text-neutral-400 text-sm mt-2 hidden">Thanks! Check your inbox shortly.</p>
-  </div>
-</div>
-
-<div id="footer-slot"></div>
-
-<script src="/Mtbb-Site/site.js"></script>
-<script>
-  // modal gating
-  const modal=document.getElementById('gateModal');
-  const gateForm=document.getElementById('gateForm');
-  const gateMsg=document.getElementById('gateMsg');
-  const intended=document.getElementById('intendedDemo');
-
-  document.querySelectorAll('.gate-demo').forEach(btn=>{
-    btn.addEventListener('click',()=>{
-      const link = btn.getAttribute('data-demo-link'); // blank for now
-      if(link){ window.location.href = link; return; }
-      intended.value = btn.parentElement.parentElement.querySelector('h3').textContent.trim();
-      modal.classList.remove('hidden'); modal.classList.add('flex');
-    });
-  });
-  document.getElementById('gateClose').addEventListener('click',()=>{
-    modal.classList.add('hidden'); modal.classList.remove('flex');
-  });
-  gateForm.addEventListener('submit', async (e)=>{
-    e.preventDefault();
-    try{
-      const r=await fetch(gateForm.action,{method:'POST',body:new FormData(gateForm),headers:{'Accept':'application/json'}});
-      if(r.ok){ gateMsg.classList.remove('hidden'); gateForm.reset(); }
-    }catch(_){}
-  });
-</script>
+  <div id="footer-slot"></div>
+  <script defer src="/Mtbb-Site/site.js"></script>
 </body>
 </html>
