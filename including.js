@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', async () => {
   const targets = Array.from(document.querySelectorAll('[data-include]'));
   await Promise.all(targets.map(async el => {
@@ -15,4 +14,3 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }));
 });
-</script>
