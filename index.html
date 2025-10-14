@@ -3,137 +3,78 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MTBB — Modern Tools for Bold Brands</title>
-  <meta name="description" content="AI-powered marketing tools for creators and small businesses. MindLink, MindScan, MindMap, AI eBook Builder." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236d73ff'/><text x='50' y='62' font-size='56' text-anchor='middle' fill='black' font-family='Arial'>M</text></svg>">
-  <meta property="og:title" content="MTBB — Modern Tools for Bold Brands" />
-  <meta property="og:description" content="Own your marketing stack: MindLink, MindScan, MindMap, and AI eBook Builder." />
-  <meta name="twitter:card" content="summary_large_image" />
+  <title>Mind The Business — MTBB</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="color-scheme" content="dark light" />
-  <script>
-    tailwind.config = { theme:{ extend:{ colors:{ brand:{DEFAULT:'#6d73ff'} }, boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'} } } }
-  </script>
-  <style>
-    html{scroll-behavior:smooth}
-    .glass{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);backdrop-filter:blur(10px)}
-    .grad{background:radial-gradient(1200px 600px at 20% -10%, rgba(109,115,255,.18), transparent 60%),radial-gradient(800px 500px at 100% 20%, rgba(77,85,230,.14), transparent 60%)}
-  </style>
+  <link rel="stylesheet" href="/Mtbb-Site/site.css">
+  <script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}}}}}</script>
 </head>
-<body class="bg-neutral-950 text-neutral-100 antialiased">
-  <!-- NAV -->
-  <header class="sticky top-0 z-50 border-b border-neutral-900/60 bg-neutral-950/70 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-2">
-        <div class="h-8 w-8 rounded-xl bg-brand flex items-center justify-center font-extrabold text-neutral-900">M</div>
-        <span class="font-semibold tracking-wide">MTBB</span>
-      </a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#tools" class="hover:text-brand">Tools</a>
-        <a href="#pricing" class="hover:text-brand">Bundles</a>
-        <a href="#media" class="hover:text-brand">Media</a>
-        <a href="#blog" class="hover:text-brand">Blog</a>
-        <a href="#faq" class="hover:text-brand">FAQ</a>
-      </nav>
-      <a href="#pricing" class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Shop</a>
-      <button id="menuBtn" class="md:hidden p-2 rounded-lg bg-neutral-900/70">☰</button>
-    </div>
-    <div id="mobileNav" class="md:hidden hidden border-t border-neutral-900/60">
-      <nav class="px-4 py-3 flex flex-col gap-2 text-sm">
-        <a href="#tools" class="py-2">Tools</a>
-        <a href="#pricing" class="py-2">Bundles</a>
-        <a href="#media" class="py-2">Media</a>
-        <a href="#blog" class="py-2">Blog</a>
-        <a href="#faq" class="py-2">FAQ</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-neutral-950 text-neutral-100 antialiased" data-page="home">
+  <div id="header-slot"></div>
 
   <!-- HERO -->
-  <section id="home" class="grad">
-    <div class="max-w-6xl mx-auto px-4 py-18 md:py-24">
-      <div class="max-w-3xl pt-8">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Modern tools for <span class="text-brand">bold brands</span>.</h1>
-        <p class="mt-4 text-neutral-300 text-lg md:text-xl">Launch with MindLink, audit with MindScan, plan with MindMap, and capture leads with the AI eBook Builder.</p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="#pricing" class="px-6 py-3 rounded-xl bg-brand text-neutral-900 font-semibold shadow-soft text-center">See Bundles</a>
-          <a href="#tools" class="px-6 py-3 rounded-xl bg-neutral-900 hover:bg-neutral-800 text-neutral-100 text-center">Explore Tools</a>
-        </div>
-        <p class="mt-3 text-sm text-neutral-400">Instant download • Free updates • Secure checkout via Gumroad/Stripe</p>
+  <section class="relative grad">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div>
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 relative">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Mind The Business</h1>
+      <p id="brandBlurb" class="mt-4 text-neutral-300 text-lg md:text-xl"></p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a href="/Mtbb-Site/packages.html" class="btn px-6 py-3 rounded-xl bg-brand text-neutral-900 font-semibold shadow">See Packages</a>
+        <a href="/Mtbb-Site/tools.html" class="btn px-6 py-3 rounded-xl ringish bg-neutral-900 text-neutral-100">Explore Tools</a>
       </div>
+      <p class="mt-3 text-sm text-neutral-400">No portfolios. Real outcomes. Built like a product.</p>
     </div>
   </section>
 
-  <!-- TRUST DATA -->
-  <section class="max-w-6xl mx-auto px-4 py-10">
-    <div id="trust" class="glass rounded-2xl p-5 text-neutral-300"></div>
+  <!-- SERVICES PREVIEW -->
+  <section class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Core Services</h2>
+    <div id="servicesGrid" class="grid md:grid-cols-3 gap-6"></div>
+    <div class="mt-6"><a href="/Mtbb-Site/services.html" class="underline hover:text-brand">View all services →</a></div>
   </section>
 
-  <!-- TOOLS -->
-  <section id="tools" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Your MTBB Toolkit</h2>
-    <div id="toolsGrid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
-  </section>
-
-  <!-- PRICING -->
-  <section id="pricing" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-2">Bundles that make sense</h2>
-    <p class="text-neutral-300 mb-8">Own the tools. No monthly lock-in.</p>
-    <div id="bundlesGrid" class="grid md:grid-cols-3 gap-6"></div>
-    <p class="text-neutral-400 text-sm mt-6" id="lifetimeNote"></p>
-  </section>
-
-  <!-- MEDIA -->
-  <section id="media" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">Media & Demos</h2>
-    <div id="mediaGrid" class="grid md:grid-cols-2 gap-6"></div>
-    <div id="galleryGrid" class="grid md:grid-cols-3 gap-6 mt-6"></div>
-  </section>
-
-  <!-- BLOG -->
-  <section id="blog" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-2">Build-in-public</h2>
-    <p class="text-neutral-300 mb-6">Release notes, playbooks, and experiments from the MTBB lab.</p>
-    <a id="blogBtn" href="#" class="inline-block px-4 py-2 rounded-xl bg-neutral-900 hover:bg-neutral-800">Open the Blog</a>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">FAQ</h2>
-    <div id="faqGrid" class="grid md:grid-cols-2 gap-6 text-neutral-300"></div>
-  </section>
-
-  <!-- ABOUT / TRUST -->
+  <!-- PACKAGES PREVIEW -->
   <section class="max-w-6xl mx-auto px-4 pb-14">
-    <div class="glass rounded-2xl p-6">
-      <h3 class="text-xl font-bold">About MTBB</h3>
-      <p id="about" class="mt-2 text-neutral-300"></p>
-    </div>
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Packages (Done-for-You)</h2>
+    <div id="packagesGrid" class="grid md:grid-cols-3 gap-6"></div>
+    <div class="mt-6"><a href="/Mtbb-Site/packages.html" class="underline hover:text-brand">Compare packages →</a></div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="border-t border-neutral-900/60">
-    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-      <span>© <span id="yr"></span> MTBB. All rights reserved.</span>
-      <div class="flex gap-4">
-        <a id="privacyLink" class="hover:text-brand" href="#">Privacy</a>
-        <a id="termsLink" class="hover:text-brand" href="#">Terms</a>
-        <a id="refundsLink" class="hover:text-brand" href="#">Refunds</a>
-        <a id="supportLink" class="hover:text-brand" href="#">Support</a>
-      </div>
-    </div>
-  </footer>
+  <div id="footer-slot"></div>
 
+  <script src="/Mtbb-Site/site.js"></script>
   <script>
-    const btn=document.getElementById('menuBtn'); const nav=document.getElementById('mobileNav');
-    btn?.addEventListener('click',()=>nav.classList.toggle('hidden'));
-    document.getElementById('yr').textContent = new Date().getFullYear();
+    async function hydrate(){
+      const data = await fetch('/Mtbb-Site/data.json').then(r=>r.json());
+      document.getElementById('brandBlurb').textContent = data.brand.blurb;
+
+      // services preview
+      const sv = document.getElementById('servicesGrid');
+      sv.innerHTML = data.services.map(s => `
+        <article class="glass rounded-2xl p-5">
+          <h3 class="font-semibold text-lg">${s.title}</h3>
+          <p class="text-neutral-300 text-sm mt-1">${s.desc}</p>
+          <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+            ${s.bullets.slice(0,3).map(b=>`<li>• ${b}</li>`).join('')}
+          </ul>
+        </article>`).join('');
+
+      // packages preview
+      const pk = document.getElementById('packagesGrid');
+      pk.innerHTML = data.packages.map(p => `
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold">${p.name}</h3>
+          <p class="text-neutral-300 mt-1">${p.desc}</p>
+          <ul class="text-neutral-400 text-sm mt-3 space-y-1">
+            ${p.deliverables.slice(0,3).map(d=>`<li>• ${d}</li>`).join('')}
+          </ul>
+          <div class="mt-4 text-neutral-300 text-sm">Pricing: ${p.price}</div>
+          <a href="${p.cta || '/Mtbb-Site/contact.html'}" class="mt-4 inline-block px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold">Request Quote</a>
+        </div>`).join('');
+    }
+    hydrate();
   </script>
-  <script src="./render.js"></script>
 </body>
-</html>      <div class="glass rounded-2xl p-6 border border-neutral-800">
-        <h3 class="text-xl font-semibold">Growth Pack</h3>
-        <p class="text-neutral-300 mt-1">MindLink + MindScan + MindMap</p>
+</html>        <p class="text-neutral-300 mt-1">MindLink + MindScan + MindMap</p>
         <div class="text-3xl font-extrabold mt-4">$69</div>
         <ul class="text-sm text-neutral-300 mt-4 space-y-1">
           <li>• Everything in Starter</li>
