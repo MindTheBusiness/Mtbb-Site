@@ -1,0 +1,91 @@
+{
+  "brand": {
+    "email": "mindthebusinessmtbb@gmail.com",
+    "about": "MTBB is an independent studio building practical AI tools for modern brands. Payments are processed securely via Gumroad/Stripe over HTTPS. Instant digital delivery and free updates.",
+    "blogUrl": "https://kawan-d-portfolio.vercel.app/notes", 
+    "policies": {
+      "privacy": "https://kawan-d-portfolio.vercel.app/policies/privacy",
+      "terms": "https://kawan-d-portfolio.vercel.app/policies/terms",
+      "refunds": "https://kawan-d-portfolio.vercel.app/policies/refunds",
+      "support": "mailto:mindthebusinessmtbb@gmail.com"
+    },
+    "trustBullets": [
+      "Secure checkout (Gumroad/Stripe)",
+      "Instant digital delivery",
+      "Free lifetime updates",
+      "Email support: mindthebusinessmtbb@gmail.com"
+    ],
+    "lifetimeNote": "Launch special: Lifetime Bundle $149 — all tools + updates."
+  },
+
+  "tools": [
+    {
+      "name": "MindScan (SEO/UX Audit)",
+      "desc": "One-click scans with prioritized fixes and exportable reports.",
+      "price": "$35",
+      "buy": "",
+      "demo": "https://mtbb-audit-toolv2-production.up.railway.app/"
+    },
+    {
+      "name": "AI eBook Builder",
+      "desc": "Generate lead magnets fast — outline, write, export.",
+      "price": "$15",
+      "buy": "",
+      "demo": "https://6848e5ae019ffb200fcbcdfb--mindlyebook-multimmodal-ai.netlify.app/"
+    },
+    {
+      "name": "MindLink (E-Business Card)",
+      "desc": "Interactive card that sells — chat, leads, analytics.",
+      "price": "$20",
+      "buy": "",
+      "demo": "#"
+    },
+    {
+      "name": "MindMap (Buyer Persona)",
+      "desc": "AI personas + messaging + campaign ideas in minutes.",
+      "price": "$25",
+      "buy": "",
+      "demo": "#"
+    }
+  ],
+
+  "bundles": [
+    {
+      "name": "Starter",
+      "desc": "MindLink + MindScan",
+      "price": "$49",
+      "buy": ""
+    },
+    {
+      "name": "Growth",
+      "desc": "MindLink + MindScan + MindMap",
+      "price": "$69",
+      "buy": ""
+    },
+    {
+      "name": "Agency",
+      "desc": "All tools + bonus docs",
+      "price": "$99",
+      "buy": ""
+    }
+  ],
+
+  "videos": [
+    { "title": "Demo 1", "embed": "https://drive.google.com/file/d/1gwxYmJIppHRljGlbKMfQclFT6cqIGkyw/preview" },
+    { "title": "Demo 2", "embed": "https://drive.google.com/file/d/1AeVVd_LwZnmSEK6GemAS502hyFO6rGMu/preview" },
+    { "title": "Demo 3", "embed": "https://drive.google.com/file/d/1Tv0guQG7V1-LgWMonn6jSUkivyPA3WTc/preview" },
+    { "title": "Demo 4", "embed": "https://drive.google.com/file/d/16OPS1CHQAGwrFoCYKj3NpNynMdqhpQx7/preview" }
+  ],
+
+  "images": [
+    { "title": "Luncheon AGM", "src": "https://drive.google.com/thumbnail?id=13Wssmb6IhfcYHovFWfLsU-RZtVkJSQkv&sz=w1200" },
+    { "title": "Promo Email — Konica", "src": "https://drive.google.com/thumbnail?id=1R1B3ctQzVziLfY7CWRcr1cYoi0k88Gse&sz=w1200" }
+  ],
+
+  "faq": [
+    { "q": "How do I get the files?", "a": "Purchases are delivered instantly via Gumroad with receipts and download links." },
+    { "q": "Can I update later?", "a": "Yes — updates are included. Buyers receive emails when new versions drop." },
+    { "q": "Refunds?", "a": "If something doesn’t work as promised, email support within 7 days and we'll make it right." },
+    { "q": "Is checkout safe?", "a": "We never touch card data. Payments are processed by Gumroad/Stripe over HTTPS." }
+  ]
+}
