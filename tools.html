@@ -1,30 +1,114 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Tools — MTBB</title>
-<script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="/Mtbb-Site/site.css">
-<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}}}}}</script></head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{brand:{DEFAULT:'#6d73ff'}},boxShadow:{soft:'0 10px 30px rgba(0,0,0,.24)'}}}}</script>
+<link rel="stylesheet" href="/Mtbb-Site/site.css">
+</head>
 <body class="bg-neutral-950 text-neutral-100" data-page="home">
 <div id="header-slot"></div>
+
 <section class="max-w-6xl mx-auto px-4 py-16">
   <h1 class="text-3xl md:text-4xl font-extrabold">MTBB Tools</h1>
   <p class="text-neutral-300 mt-2">Ownable utilities you can use with or without our services.</p>
-  <div id="toolsGrid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8"></div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    <!-- SEO/GEO TOOL -->
+    <article class="glass rounded-2xl p-6">
+      <h3 class="font-semibold text-lg">MindScan (SEO / GEO Audit)</h3>
+      <p class="text-neutral-300 text-sm mt-1">Run a fast scan, see snapshot grades, and get a prioritized AI plan.</p>
+      <div class="mt-3 text-neutral-400 text-sm">Price: $35 — monthly option coming soon</div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <!-- demo gating: blank link triggers modal -->
+        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
+        <!-- paid placeholder -->
+        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Unlock Full Plan</a>
+      </div>
+    </article>
+
+    <!-- EBOOK -->
+    <article class="glass rounded-2xl p-6">
+      <h3 class="font-semibold text-lg">AI eBook Builder</h3>
+      <p class="text-neutral-300 text-sm mt-1">Generate a lead magnet fast — outline, write, export.</p>
+      <div class="mt-3 text-neutral-400 text-sm">Price: $15</div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
+        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
+      </div>
+    </article>
+
+    <!-- MindLink -->
+    <article class="glass rounded-2xl p-6">
+      <h3 class="font-semibold text-lg">MindLink (Interactive eCard)</h3>
+      <p class="text-neutral-300 text-sm mt-1">Capture leads with chat, QR, and simple analytics.</p>
+      <div class="mt-3 text-neutral-400 text-sm">Price: $20</div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
+        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
+      </div>
+    </article>
+
+    <!-- MindMap -->
+    <article class="glass rounded-2xl p-6">
+      <h3 class="font-semibold text-lg">MindMap (Buyer Persona)</h3>
+      <p class="text-neutral-300 text-sm mt-1">AI personas + messaging + campaign ideas.</p>
+      <div class="mt-3 text-neutral-400 text-sm">Price: $25</div>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <button data-demo-link="" class="gate-demo px-3 py-2 rounded-lg bg-neutral-900 ringish text-sm">Try Demo</button>
+        <a href="#" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy</a>
+      </div>
+    </article>
+  </div>
 </section>
+
+<!-- DEMO GATE MODAL -->
+<div id="gateModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center p-4 z-50">
+  <div class="max-w-md w-full glass rounded-2xl p-6">
+    <h3 class="text-xl font-bold">Get instant demo access</h3>
+    <p class="text-neutral-300 mt-2">Enter your email — we’ll unlock the demo and send occasional updates.</p>
+    <form id="gateForm" action="https://formspree.io/f/your-endpoint" method="POST" class="mt-4 space-y-3">
+      <input type="email" required name="email" class="w-full px-4 py-3 rounded-xl bg-neutral-900 ringish" placeholder="you@brand.com">
+      <input type="hidden" name="source" value="demo-gate">
+      <input type="hidden" id="intendedDemo" name="intended_demo" value="">
+      <div class="flex gap-2">
+        <button class="px-4 py-2 rounded-xl bg-brand text-neutral-900 font-semibold" type="submit">Unlock Demo</button>
+        <button type="button" id="gateClose" class="px-4 py-2 rounded-xl bg-neutral-800">Cancel</button>
+      </div>
+    </form>
+    <p id="gateMsg" class="text-neutral-400 text-sm mt-2 hidden">Thanks! Check your inbox shortly.</p>
+  </div>
+</div>
+
 <div id="footer-slot"></div>
+
 <script src="/Mtbb-Site/site.js"></script>
 <script>
-(async()=>{
-  const data=await fetch('/Mtbb-Site/data.json').then(r=>r.json());
-  document.getElementById('toolsGrid').innerHTML = data.tools.map(t=>`
-    <article class="glass rounded-2xl p-5">
-      <h3 class="font-semibold text-lg">${t.name}</h3>
-      <p class="text-neutral-300 text-sm mt-1">${t.desc}</p>
-      <div class="mt-3 text-neutral-400 text-sm">${t.price?`Price: ${t.price}`:''}</div>
-      <div class="mt-4 flex gap-2">
-        ${t.buy ? `<a href="${t.buy}" class="px-3 py-2 rounded-lg bg-brand text-neutral-900 text-sm font-semibold">Buy ${t.price||''}</a>` : `<span class="px-3 py-2 rounded-lg bg-neutral-800 text-sm">Buy link soon</span>`}
-        <a href="${t.demo||'#'}" class="px-3 py-2 rounded-lg ringish bg-neutral-900 text-sm">Open</a>
-      </div>
-    </article>`).join('');
-})();
+  // modal gating
+  const modal=document.getElementById('gateModal');
+  const gateForm=document.getElementById('gateForm');
+  const gateMsg=document.getElementById('gateMsg');
+  const intended=document.getElementById('intendedDemo');
+
+  document.querySelectorAll('.gate-demo').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const link = btn.getAttribute('data-demo-link'); // blank for now
+      if(link){ window.location.href = link; return; }
+      intended.value = btn.parentElement.parentElement.querySelector('h3').textContent.trim();
+      modal.classList.remove('hidden'); modal.classList.add('flex');
+    });
+  });
+  document.getElementById('gateClose').addEventListener('click',()=>{
+    modal.classList.add('hidden'); modal.classList.remove('flex');
+  });
+  gateForm.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    try{
+      const r=await fetch(gateForm.action,{method:'POST',body:new FormData(gateForm),headers:{'Accept':'application/json'}});
+      if(r.ok){ gateMsg.classList.remove('hidden'); gateForm.reset(); }
+    }catch(_){}
+  });
 </script>
-</body></html>
+</body>
+</html>
