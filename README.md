@@ -1,2 +1,2 @@
 # Mtbb-Site
-Mindly the business website 
+Mind the business website 
