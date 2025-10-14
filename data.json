@@ -1,34 +1,72 @@
 {
   "brand": {
+    "tagline": "AI-powered marketing & BI, delivered like a product.",
+    "blurb": "Mind The Business (MTBB) is a studio that builds practical AI tools and delivers done-for-you growth systems for creators and small brands. No fluff — real outcomes.",
     "email": "mindthebusinessmtbb@gmail.com",
-    "about": "MTBB is an independent studio building practical AI tools for modern brands. Payments are processed securely via Gumroad/Stripe over HTTPS. Instant digital delivery and free updates.",
-    "blogUrl": "https://kawan-d-portfolio.vercel.app/notes", 
     "policies": {
-      "privacy": "https://kawan-d-portfolio.vercel.app/policies/privacy",
-      "terms": "https://kawan-d-portfolio.vercel.app/policies/terms",
-      "refunds": "https://kawan-d-portfolio.vercel.app/policies/refunds",
+      "privacy": "#",
+      "terms": "#",
+      "refunds": "#",
       "support": "mailto:mindthebusinessmtbb@gmail.com"
-    },
-    "trustBullets": [
-      "Secure checkout (Gumroad/Stripe)",
-      "Instant digital delivery",
-      "Free lifetime updates",
-      "Email support: mindthebusinessmtbb@gmail.com"
-    ],
-    "lifetimeNote": "Launch special: Lifetime Bundle $149 — all tools + updates."
+    }
   },
+
+  "services": [
+    {
+      "title": "SEO & UX Fix Sprint",
+      "desc": "30-day sprint to raise search visibility and conversions.",
+      "bullets": ["Full MindScan audit + priority fixes", "On-page cleanup (titles, meta, speed)", "UX tweaks for mobile funnels", "Simple KPI dashboard"],
+      "cta": "Request Quote"
+    },
+    {
+      "title": "Offer + Funnel Launch",
+      "desc": "Position your offer and ship a funnel that converts.",
+      "bullets": ["Persona & messaging via MindMap", "Landing page copy + build", "Email capture + nurture", "Analytics wiring"],
+      "cta": "Request Quote"
+    },
+    {
+      "title": "BI Starter (Insights Engine)",
+      "desc": "Get the numbers that matter with a lean reporting setup.",
+      "bullets": ["KPI design session", "GA4 + events + goals", "Lightweight dashboard (Looker/Sheets)", "Weekly insights for 4 weeks"],
+      "cta": "Request Quote"
+    }
+  ],
+
+  "packages": [
+    {
+      "name": "Launch Kit",
+      "desc": "Offer + landing + analytics in one package.",
+      "deliverables": ["Persona & positioning", "Landing page build", "Lead magnet (AI eBook)", "KPI & analytics wiring"],
+      "price": "Custom",
+      "cta": "#"
+    },
+    {
+      "name": "Growth Kit",
+      "desc": "30-day SEO/UX sprint to lift traffic and conversions.",
+      "deliverables": ["MindScan audit + fixes", "Content plan (3-5 posts)", "On-page SEO update", "Performance reports"],
+      "price": "Custom",
+      "cta": "#"
+    },
+    {
+      "name": "Intelligence Kit",
+      "desc": "Your BI starter: metrics, dashboards, and insights.",
+      "deliverables": ["KPI map", "Events & tracking", "Dashboard setup", "Weekly insights (4 weeks)"],
+      "price": "Custom",
+      "cta": "#"
+    }
+  ],
 
   "tools": [
     {
       "name": "MindScan (SEO/UX Audit)",
-      "desc": "One-click scans with prioritized fixes and exportable reports.",
+      "desc": "One-click scans with prioritized fixes and exports.",
       "price": "$35",
       "buy": "",
       "demo": "https://mtbb-audit-toolv2-production.up.railway.app/"
     },
     {
       "name": "AI eBook Builder",
-      "desc": "Generate lead magnets fast — outline, write, export.",
+      "desc": "Generate a lead magnet fast — outline, write, export.",
       "price": "$15",
       "buy": "",
       "demo": "https://6848e5ae019ffb200fcbcdfb--mindlyebook-multimmodal-ai.netlify.app/"
@@ -49,43 +87,13 @@
     }
   ],
 
-  "bundles": [
+  "posts": [
     {
-      "name": "Starter",
-      "desc": "MindLink + MindScan",
-      "price": "$49",
-      "buy": ""
-    },
-    {
-      "name": "Growth",
-      "desc": "MindLink + MindScan + MindMap",
-      "price": "$69",
-      "buy": ""
-    },
-    {
-      "name": "Agency",
-      "desc": "All tools + bonus docs",
-      "price": "$99",
-      "buy": ""
+      "id": "welcome",
+      "title": "Welcome to MTBB: how we build growth like a product",
+      "date": "2025-10-14",
+      "summary": "What MTBB is, how the tools and DFY packages connect, and how we measure wins.",
+      "url": "#"
     }
-  ],
-
-  "videos": [
-    { "title": "Demo 1", "embed": "https://drive.google.com/file/d/1gwxYmJIppHRljGlbKMfQclFT6cqIGkyw/preview" },
-    { "title": "Demo 2", "embed": "https://drive.google.com/file/d/1AeVVd_LwZnmSEK6GemAS502hyFO6rGMu/preview" },
-    { "title": "Demo 3", "embed": "https://drive.google.com/file/d/1Tv0guQG7V1-LgWMonn6jSUkivyPA3WTc/preview" },
-    { "title": "Demo 4", "embed": "https://drive.google.com/file/d/16OPS1CHQAGwrFoCYKj3NpNynMdqhpQx7/preview" }
-  ],
-
-  "images": [
-    { "title": "Luncheon AGM", "src": "https://drive.google.com/thumbnail?id=13Wssmb6IhfcYHovFWfLsU-RZtVkJSQkv&sz=w1200" },
-    { "title": "Promo Email — Konica", "src": "https://drive.google.com/thumbnail?id=1R1B3ctQzVziLfY7CWRcr1cYoi0k88Gse&sz=w1200" }
-  ],
-
-  "faq": [
-    { "q": "How do I get the files?", "a": "Purchases are delivered instantly via Gumroad with receipts and download links." },
-    { "q": "Can I update later?", "a": "Yes — updates are included. Buyers receive emails when new versions drop." },
-    { "q": "Refunds?", "a": "If something doesn’t work as promised, email support within 7 days and we'll make it right." },
-    { "q": "Is checkout safe?", "a": "We never touch card data. Payments are processed by Gumroad/Stripe over HTTPS." }
   ]
 }
