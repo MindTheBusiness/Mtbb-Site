@@ -28,3 +28,23 @@ html{scroll-behavior:smooth}
   .stat{padding:12px 8px}
   .stat-num{font-size:16px}
 }
+
+/* trust chips & secure items */
+.chip{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.45rem .7rem;border-radius:9999px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.08);
+  color:#e5e7eb;font-weight:600;font-size:.8rem;
+}
+.chip:hover{border-color:rgba(109,115,255,.45);color:#ffffff}
+.lock{
+  width:14px;height:14px;display:inline-block;border-radius:3px;
+  border:2px solid rgba(255,255,255,.5);position:relative;box-sizing:border-box
+}
+.lock:before{
+  content:"";position:absolute;left:50%;transform:translateX(-50%);
+  top:-7px;width:10px;height:6px;border:2px solid rgba(255,255,255,.5);
+  border-bottom:none;border-radius:8px 8px 0 0
+}
+.secure-item{display:flex;align-items:center;gap:.5rem}
